@@ -35,7 +35,7 @@
         <Text x="26" y="99" text="Compétence 6" />
         <Pane fx:id="toile" styleClass="toile"/>
     </Pane>
-    <VBox alignment="CENTER" fx:id="competenccesVBox">
+    <VBox alignment="CENTER" >
         <GridPane alignment="CENTER" hgap="50" >
             <Label text="Compétence 1 - Réaliser" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
             <Label text="Compétence 2 - Optimiser" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
@@ -58,7 +58,7 @@
         <Label fx:id="messageErreurLabel" text=" " textFill="red"/>
 
         <HBox alignment="CENTER">
-            <Button fx:id="tracerButton" text="Tracer"/>
+            <Button fx:id="tracerButton" onAction="#buttonTracerAction" text="Tracer"/>
             <Button fx:id="viderButton" onAction="#buttonViderAction" text="Vider"/>
         </HBox>
     </VBox>
