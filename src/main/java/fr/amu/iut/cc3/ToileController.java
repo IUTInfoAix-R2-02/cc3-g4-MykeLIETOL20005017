@@ -37,6 +37,18 @@ public class ToileController implements Initializable {
 
     @FXML
     private Pane toile;
+    @FXML
+    private TextField competence1TextField;
+    @FXML
+    private TextField competence2TextField;
+    @FXML
+    private TextField competence3TextField;
+    @FXML
+    private TextField competence4TextField;
+    @FXML
+    private TextField competence5TextField;
+    @FXML
+    private TextField competence6TextField;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -51,30 +63,53 @@ public class ToileController implements Initializable {
         return (int) (rayonCercleExterieur - Math.sin(Math.toRadians(angleDepart - (axe-1)  * angleEnDegre)) * rayonCercleExterieur
                 *  (value / noteMaximale));
     }
+
     @FXML
-    private void action() {
-        //récupérer la note saisie
-        double note = Double.parseDouble(sourceOfEvent.getText());
-        // identifier la compétence associée au champs de saisie
-        String comptAssocie = sourceOfEvent.getId();
-        int axe = 0;
-        switch (comptAssocie){
-            case "competence1TextField":
-                axe = 1; break;
-            case "competence2TextField":
-                axe = 2; break;
-            case "competence3TextField":
-                axe = 3; break;
-            case "competence4TextField":
-                axe = 4; break;
-            case "competence5TextField":
-                axe = 5; break;
-            case "competence6TextField":
-                axe = 6; break;
-        }
-        // dessiner le point (un cercle JavaFX) sur l'axe correspondant dans le diagramme radar.
+    private void button1Action(){
+        double note = Double.parseDouble(competence1TextField.getText());
         Circle point = new Circle(10, 10, 10, Color.BLACK);
         point.setFill(Color.BLACK);
+        point.relocate(getXRadarChart(note, 1),getYRadarChart(note, 1));
+        toile.getChildren().add(point);
+    }
+    @FXML
+    private void button2Action(){
+        double note = Double.parseDouble(competence2TextField.getText());
+        Circle point = new Circle(10, 10, 10, Color.BLACK);
+        point.setFill(Color.BLACK);
+        point.relocate(getXRadarChart(note, 2),getYRadarChart(note, 2));
+        toile.getChildren().add(point);
+    }
+    @FXML
+    private void button3Action(){
+        double note = Double.parseDouble(competence3TextField.getText());
+        Circle point = new Circle(10, 10, 10, Color.BLACK);
+        point.setFill(Color.BLACK);
+        point.relocate(getXRadarChart(note, 3),getYRadarChart(note, 3));
+        toile.getChildren().add(point);
+    }
+    @FXML
+    private void button4Action(){
+        double note = Double.parseDouble(competence4TextField.getText());
+        Circle point = new Circle(10, 10, 10, Color.BLACK);
+        point.setFill(Color.BLACK);
+        point.relocate(getXRadarChart(note, 4),getYRadarChart(note, 4));
+        toile.getChildren().add(point);
+    }
+    @FXML
+    private void button5Action(){
+        double note = Double.parseDouble(competence5TextField.getText());
+        Circle point = new Circle(10, 10, 10, Color.BLACK);
+        point.setFill(Color.BLACK);
+        point.relocate(getXRadarChart(note, 5),getYRadarChart(note, 5));
+        toile.getChildren().add(point);
+    }
+    @FXML
+    private void button6Action(){
+        double note = Double.parseDouble(competence6TextField.getText());
+        Circle point = new Circle(10, 10, 10, Color.BLACK);
+        point.setFill(Color.BLACK);
+        point.relocate(getXRadarChart(note, 6),getYRadarChart(note, 6));
         toile.getChildren().add(point);
     }
 

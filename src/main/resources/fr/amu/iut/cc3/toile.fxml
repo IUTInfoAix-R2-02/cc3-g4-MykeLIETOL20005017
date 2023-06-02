@@ -44,12 +44,12 @@
             <Label text="Compétence 5 - Conduire" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             <Label text="Compétence 6 - Collaborer" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
 
-            <TextField fx:id="competence1TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-            <TextField fx:id="competence2TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <TextField fx:id="competence3TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-            <TextField fx:id="competence4TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-            <TextField fx:id="competence5TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-            <TextField fx:id="competence6TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            <TextField fx:id="competence1TextField" onAction="#button1Action" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <TextField fx:id="competence2TextField" onAction="#button2Action" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <TextField fx:id="competence3TextField" onAction="#button3Action" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <TextField fx:id="competence4TextField" onAction="#button4Action" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <TextField fx:id="competence5TextField" onAction="#button5Action" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <TextField fx:id="competence6TextField" onAction="#button6Action" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" />
             </padding>
