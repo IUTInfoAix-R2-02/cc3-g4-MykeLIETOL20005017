@@ -156,6 +156,7 @@ public class ToileController implements Initializable {
             Line ligne = new Line(listeCompetence.get(i).getCenterX(), listeCompetence.get(i).getCenterY(), listeCompetence.get(i+1).getCenterX(), listeCompetence.get(i+1).getCenterY());
             toile.getChildren().add(ligne);
         }
-
+        Line ligne = new Line(listeCompetence.get(listeCompetence.size()-1).getCenterX(), listeCompetence.get(listeCompetence.size()-1).getCenterY(), listeCompetence.get(0).getCenterX(), listeCompetence.get(0).getCenterY());
+        toile.getChildren().add(ligne);
     }
 }
