@@ -13,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Point2D;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
@@ -50,6 +51,9 @@ public class ToileController implements Initializable {
     @FXML
     private TextField competence6TextField;
 
+    @FXML
+    private VBox competenccesVBox;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
@@ -70,7 +74,14 @@ public class ToileController implements Initializable {
         Circle point = new Circle(10, 10, 10, Color.BLACK);
         point.setFill(Color.BLACK);
         point.relocate(getXRadarChart(note, 1),getYRadarChart(note, 1));
-        toile.getChildren().add(point);
+        Label messageErreur = new Label("Erreur de saisie : \n Les valeurs doivent être entre 0 et 20");
+        messageErreur.setTextFill(Color.RED);
+        if (note <= 20 && note >= 0){
+            toile.getChildren().add(point);
+        }
+        else{
+            competenccesVBox.getChildren().add(1, messageErreur);
+        }
     }
     @FXML
     private void button2Action(){
@@ -78,7 +89,14 @@ public class ToileController implements Initializable {
         Circle point = new Circle(10, 10, 10, Color.BLACK);
         point.setFill(Color.BLACK);
         point.relocate(getXRadarChart(note, 2),getYRadarChart(note, 2));
-        toile.getChildren().add(point);
+        Label messageErreur = new Label("Erreur de saisie : \n Les valeurs doivent être entre 0 et 20");
+        messageErreur.setTextFill(Color.RED);
+        if (note <= 20 && note >= 0){
+            toile.getChildren().add(point);
+        }
+        else{
+            competenccesVBox.getChildren().add(1, messageErreur);
+        }
     }
     @FXML
     private void button3Action(){
@@ -86,7 +104,14 @@ public class ToileController implements Initializable {
         Circle point = new Circle(10, 10, 10, Color.BLACK);
         point.setFill(Color.BLACK);
         point.relocate(getXRadarChart(note, 3),getYRadarChart(note, 3));
-        toile.getChildren().add(point);
+        Label messageErreur = new Label("Erreur de saisie : \n Les valeurs doivent être entre 0 et 20");
+        messageErreur.setTextFill(Color.RED);
+        if (note <= 20 && note >= 0){
+            toile.getChildren().add(point);
+        }
+        else{
+            competenccesVBox.getChildren().add(1, messageErreur);
+        }
     }
     @FXML
     private void button4Action(){
@@ -94,7 +119,14 @@ public class ToileController implements Initializable {
         Circle point = new Circle(10, 10, 10, Color.BLACK);
         point.setFill(Color.BLACK);
         point.relocate(getXRadarChart(note, 4),getYRadarChart(note, 4));
-        toile.getChildren().add(point);
+        Label messageErreur = new Label("Erreur de saisie : \n Les valeurs doivent être entre 0 et 20");
+        messageErreur.setTextFill(Color.RED);
+        if (note <= 20 && note >= 0){
+            toile.getChildren().add(point);
+        }
+        else{
+            competenccesVBox.getChildren().add(1, messageErreur);
+        }
     }
     @FXML
     private void button5Action(){
@@ -102,7 +134,14 @@ public class ToileController implements Initializable {
         Circle point = new Circle(10, 10, 10, Color.BLACK);
         point.setFill(Color.BLACK);
         point.relocate(getXRadarChart(note, 5),getYRadarChart(note, 5));
-        toile.getChildren().add(point);
+        Label messageErreur = new Label("Erreur de saisie : \n Les valeurs doivent être entre 0 et 20");
+        messageErreur.setTextFill(Color.RED);
+        if (note <= 20 && note >= 0){
+            toile.getChildren().add(point);
+        }
+        else{
+            competenccesVBox.getChildren().add(1, messageErreur);
+        }
     }
     @FXML
     private void button6Action(){
@@ -110,7 +149,14 @@ public class ToileController implements Initializable {
         Circle point = new Circle(10, 10, 10, Color.BLACK);
         point.setFill(Color.BLACK);
         point.relocate(getXRadarChart(note, 6),getYRadarChart(note, 6));
-        toile.getChildren().add(point);
+        Label messageErreur = new Label("Erreur de saisie : \n Les valeurs doivent être entre 0 et 20");
+        messageErreur.setTextFill(Color.RED);
+        if (note <= 20 && note >= 0){
+            toile.getChildren().add(point);
+        }
+        else{
+            competenccesVBox.getChildren().add(1, messageErreur);
+        }
     }
 
 }

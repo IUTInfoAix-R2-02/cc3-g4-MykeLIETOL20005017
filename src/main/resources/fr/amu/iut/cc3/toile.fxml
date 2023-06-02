@@ -35,7 +35,7 @@
         <Text x="26" y="99" text="Compétence 6" />
         <Pane fx:id="toile" styleClass="toile"/>
     </Pane>
-    <VBox alignment="CENTER">
+    <VBox alignment="CENTER" fx:id="competenccesVBox">
         <GridPane alignment="CENTER" hgap="50" >
             <Label text="Compétence 1 - Réaliser" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
             <Label text="Compétence 2 - Optimiser" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
