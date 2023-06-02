@@ -14,7 +14,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.geometry.Insets?>
-<HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+<HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.amu.iut.cc3.ToileController" >
     <Pane prefHeight="400.0" prefWidth="400.0" >
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile"/>
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile"/>
@@ -44,12 +44,12 @@
             <Label text="Compétence 5 - Conduire" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             <Label text="Compétence 6 - Collaborer" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
 
-            <TextField fx:id="competence1TextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-            <TextField fx:id="competence2TextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <TextField fx:id="competence3TextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-            <TextField fx:id="competence4TextField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-            <TextField fx:id="competence5TextField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-            <TextField fx:id="competence6TextField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            <TextField fx:id="competence1TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <TextField fx:id="competence2TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <TextField fx:id="competence3TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <TextField fx:id="competence4TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <TextField fx:id="competence5TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <TextField fx:id="competence6TextField" onAction="#action" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" />
             </padding>
